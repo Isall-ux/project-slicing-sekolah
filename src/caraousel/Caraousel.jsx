@@ -8,20 +8,28 @@ const Caraousel = () => {
       id: 1,
       src: '/Kum.jpeg',
       alt: 'Kum',
-      title: 'PPDB',
-      heading: 'SMK YADIKA SOREANG'
+      title: 'Yuk daftar sekarang',
+      heading: 'SELAMAT DATANG',
+      text: 'DI WEBSITE SMK YADIKA SOREANG',
+      link: 'https://smkyadikasoreang.sch.id/ppdb'
     },
     {
       id: 2,
       src: '/IHT.jpeg',
       alt: 'IHT',
-      title: 'PPDB'
+      title: 'Lihat PPDB',
+      heading: 'TELAH DI BUKA',
+      text: 'PENERIMAAN PESERTA DIDIK BARU TAHUN AJARAN 2024-2025',
+      link: 'https://smkyadikasoreang.sch.id/ppdb'
     },
     {
       id: 3,
       src: '/lobi.jpeg',
       alt: 'Lobi yadika',
-      title: 'Yuk daftar sekarang'
+      title: 'Lihat PPDB  ',
+      heading: 'SMK YADIKA SOREANG',
+      text: 'SEKOLAH SWASTA DENGAN FASILITAS PEMBELAJARAN YANG LENGKAP',
+      link: 'https://smkyadikasoreang.sch.id/ppdb'
     },
   ];
 
@@ -69,11 +77,14 @@ const Caraousel = () => {
               />
               <div className="flex w-full h-full gap-2 sm:gap-3 flex-col items-center justify-center text-center absolute top-0 left-0 px-2 sm:px-4" style={{ zIndex: 1 }}>
                 {item.heading && (
-                  <h1 className="text-white font-bold text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl drop-shadow-md">{item.heading}</h1>
+                  <h1 className="text-white font-bold text-2xl lg:text-4xl drop-shadow-md">{item.heading}</h1>
+                )}
+                {item.text && (
+                  <p className='text-white text-[10px] md:text-sm drop-shadow-md'>{item.text}</p>
                 )}
                 <a
                   className="inline-block text-white rounded-sm border border-blue-600 bg-blue-600 px-6 sm:px-12 py-2 sm:py-3 text-xs sm:text-sm font-medium mt-2"
-                  href="#"
+                  href={item.link}
                 >
                   {item.title}
                 </a>
@@ -85,7 +96,7 @@ const Caraousel = () => {
         {/* Previous button */}
         <button
           onClick={prevSlide}
-          className="absolute top-1/2 left-2 sm:left-4 transform -translate-y-1/2 bg-opacity-20 hover:bg-opacity-40 text-white p-1 sm:p-2 md:p-4 rounded-full transition-colors backdrop-blur-sm z-10"
+          className="absolute top-1/2 left-2 sm:left-4 transform -translate-y-1/2 text-white p-1 sm:p-2 md:p-4 rounded-full z-10"
           aria-label="Previous slide"
         >
           <svg
@@ -102,7 +113,7 @@ const Caraousel = () => {
         {/* Next button */}
         <button
           onClick={nextSlide}
-          className="absolute top-1/2 right-2 sm:right-4 transform -translate-y-1/2 bg-opacity-20 hover:bg-opacity-40 text-white p-1 sm:p-2 md:p-4 rounded-full transition-colors backdrop-blur-sm z-10"
+          className="absolute top-1/2 right-2 sm:right-4 transform -translate-y-1/2 text-white p-1 sm:p-2 md:p-4 rounded-full z-10"
           aria-label="Next slide"
         >
           <svg
