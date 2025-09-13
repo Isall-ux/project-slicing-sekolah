@@ -8,7 +8,7 @@ import ButtonRound from './ButtonRound.jsx'
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div className="flex items-center justify-between px-4 sm:px-10 py-5 border-b-2 border-gray-200 w-full sticky top-0 z-20 bg-white">
+  <div className="flex items-center justify-between px-4 sm:px-10 py-5 border-b-2 border-gray-200 w-screen sticky top-0 z-20 bg-white">
       <nav className="flex items-center flex-row w-full">
         <BrandLabel />
         {/* Hamburger icon for mobile */}
