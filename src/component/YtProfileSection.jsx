@@ -32,15 +32,15 @@ const YtProfileSection = () => {
       </div>
 
       {/* Bottom Content (YT Video) */}
-      <div className="w-full max-w-2xl mx-auto lg:mx-0">
+      <div className="w-full max-w-md mx-auto lg:mx-0">
         <iframe
           className="rounded-lg shadow-lg w-full aspect-video"
-          src="https://www.youtube.com/embed/n1eQ2-nfFQ0" 
+          src="https://www.youtube.com/embed/ubTDTZYQq6I?si=hlnmfoKR5P0LTBxs" 
           title="SMK Yadika Soreang Profile"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
-        ></iframe>
+        />
       </div>
     </section>
   )
