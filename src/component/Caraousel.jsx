@@ -61,14 +61,14 @@ const Caraousel = () => {
 
   return (
     <div className="bg-slate-900 w-screen flex items-center justify-center p-0">
-      <div className="relative w-screen overflow-hidden rounded-none shadow-2xl max-h-[400px]">
+      <div className="relative w-full max-w-screen-xl overflow-hidden rounded-none shadow-2xl max-h-[400px]">
         {/* The main container for all carousel slides. */}
         <div
           className="flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${currentSlide * 100}%)` }}
         >
           {carouselItems.map((item) => (
-            <div key={item.id} className="w-screen flex-shrink-0 relative h-56 xs:h-64 sm:h-80 md:h-96 lg:h-[400px]">
+            <div key={item.id} className="w-full flex-shrink-0 relative h-56 xs:h-64 sm:h-80 md:h-96 lg:h-[400px] overflow-hidden">
               <img
                 src={item.src}
                 alt={item.alt}
