@@ -62,7 +62,6 @@ const JurusanSection = () => {
 
         </div>
 
-        {/* Footer - visitor count */}
         <div className="mt-12">
           <div className="bg-white shadow-md rounded-lg px-6 py-3 inline-block">
             <p className="text-gray-700 font-medium">Jumlah Pengunjung: 368</p>

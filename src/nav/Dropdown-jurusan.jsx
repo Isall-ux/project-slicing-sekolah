@@ -6,7 +6,6 @@ const Dropdown = () => {
     { value: 'PENGHARGAAN', label: 'PENGHARGAAN', link: 'https://smkyadikasoreang.sch.id/Pojoksiswa/Penghargaan' },
   ];
   const [isOpen, setIsOpen] = useState(false);
-  const [selected, setSelected] = useState(null);
 
   return (
     <div>

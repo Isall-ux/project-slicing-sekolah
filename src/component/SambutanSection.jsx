@@ -5,7 +5,6 @@ const SambutanSection = () => {
     <section className="w-[90%] mx-auto my-10 p-6">
       <div className="flex flex-col md:flex-row items-center md:items-start gap-16">
         
-        {/* Left - Image */}
         <div className="flex-shrink-0">
           <img
             src="/lead.png"
@@ -14,7 +13,6 @@ const SambutanSection = () => {
           />
         </div>
 
-        {/* Right - Content */}
         <div className="text-center md:text-left w-full md:w-[80%]">
         <h2 className="text-2xl md:text-4xl font-bold mb-4">
             Sambutan Kepala Sekolah

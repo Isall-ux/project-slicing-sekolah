@@ -11,7 +11,7 @@ const Nav = () => {
   <div className="flex items-center justify-between px-4 sm:px-10 py-5 border-b-2 border-gray-200 w-screen sticky top-0 z-20 bg-white">
       <nav className="flex items-center flex-row w-full">
         <BrandLabel />
-        {/* Hamburger icon for mobile */}
+        {/* Hamburger icon untuk mobile */}
         <button
           className="lg:hidden ml-auto p-2 focus:outline-none"
           aria-label="Toggle menu"

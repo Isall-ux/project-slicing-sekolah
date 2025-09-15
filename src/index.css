@@ -1,1 +1,2 @@
-@import "tailwindcss";
+@import "tailwindcss"; 
+/* import tailwind untuk mulai menggunakan tailwind, kenapa harus gini karna file yg di link atau pada main.jsx adalah berupa file ini */

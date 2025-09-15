@@ -1,10 +1,9 @@
 import React from "react";
-import { Users, User } from "lucide-react"; // optional, if using lucide-react icons
+import { Users, User } from "lucide-react"; // icon yg akan di pakai di import dari lucide react
 
 const StatistikSection = () => {
   return (
     <section>
-      {/* Top - Statistics */}
       <div className="bg-blue-500 text-white py-12">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
           {/* Card 1 */}
@@ -37,7 +36,6 @@ const StatistikSection = () => {
         </div>
       </div>
 
-      {/* Bottom - CTA */}
       <div className="bg-blue-900 text-white py-8">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center gap-3.5 px-36">
           <h3 className="text-2xl font-bold mb-4 md:mb-0">

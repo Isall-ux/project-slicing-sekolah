@@ -3,9 +3,8 @@ import React from 'react'
 const YtProfileSection = () => {
   return (
     <section className="bg-gray-50 flex flex-col px-6 lg:px-20 py-16 gap-10">
-      {/* Top Content */}
       <div className="w-full text-center lg:text-left flex flex-col items-center lg:items-start">
-        {/* Logo only on mobile */}
+        {/* Logo yg muncul hanya di mobile */}
         <img
           src="https://smkyadikasoreang.sch.id/Assets/img/logo/logo yadika.png"
           alt="SMK Yadika Soreang Logo"
@@ -31,7 +30,9 @@ const YtProfileSection = () => {
         </div>
       </div>
 
-      {/* Bottom Content (YT Video) */}
+      {/* 
+        embbed yt video dari fitur share youtube
+      */}
       <div className="w-full max-w-md mx-auto lg:mx-0">
         <iframe
           className="rounded-lg shadow-lg w-full aspect-video"

@@ -4,6 +4,8 @@ import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 import { defineConfig, globalIgnores } from 'eslint/config'
 
+// es lint adalah tools yg ngecek style kode kita dan mempercegah error yg ada
+
 export default defineConfig([
   globalIgnores(['dist']),
   {

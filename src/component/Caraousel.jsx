@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-// The main App component containing the carousel logic and UI.
 const Caraousel = () => {
-  // Array of carousel items. In a real-world app, you might fetch this data.
   const carouselItems = [
     {
       id: 1,
@@ -33,26 +31,24 @@ const Caraousel = () => {
     },
   ];
 
-  // State to keep track of the current slide index.
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // Auto-play feature using useEffect.
   useEffect(() => {
-    // Set an interval to advance the slide every 5 seconds.
+    // menyetel interval agar slide berganti setiap 5 detik
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % carouselItems.length);
     }, 5000);
 
-    // Clean up the interval when the component unmounts.
+    // membersihkan interval saat componnent keluar
     return () => clearInterval(interval);
-  }, [carouselItems.length]); // Re-run effect if the number of items changes.
+  }, [carouselItems.length]); // mengulang efek interval jika nomer item berubah
 
-  // Function to navigate to the next slide.
+  // Function untuk navigasi kepada slide berikutnya
   const nextSlide = () => {
     setCurrentSlide((prevSlide) => (prevSlide + 1) % carouselItems.length);
   };
 
-  // Function to navigate to the previous slide.
+  // Function untuk navigasi kepada slide sebelumnya
   const prevSlide = () => {
     setCurrentSlide((prevSlide) =>
       (prevSlide - 1 + carouselItems.length) % carouselItems.length
@@ -62,7 +58,6 @@ const Caraousel = () => {
   return (
     <div className="bg-slate-900 w-screen flex items-center justify-center p-0">
       <div className="relative w-full max-w-screen-xl overflow-hidden rounded-none shadow-2xl max-h-[400px]">
-        {/* The main container for all carousel slides. */}
         <div
           className="flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${currentSlide * 100}%)` }}
@@ -92,8 +87,7 @@ const Caraousel = () => {
             </div>
           ))}
         </div>
-
-        {/* Previous button */}
+        
         <button
           onClick={prevSlide}
           className="absolute top-1/2 left-2 sm:left-4 transform -translate-y-1/2 text-white p-1 sm:p-2 md:p-4 rounded-full z-10"
@@ -110,7 +104,6 @@ const Caraousel = () => {
           </svg>
         </button>
 
-        {/* Next button */}
         <button
           onClick={nextSlide}
           className="absolute top-1/2 right-2 sm:right-4 transform -translate-y-1/2 text-white p-1 sm:p-2 md:p-4 rounded-full z-10"
@@ -127,7 +120,6 @@ const Caraousel = () => {
           </svg>
         </button>
 
-        {/* Navigation dots */}
         <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
           {carouselItems.map((_, index) => (
             <button
