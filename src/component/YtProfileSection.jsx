@@ -21,12 +21,20 @@ const YtProfileSection = () => {
         </p>
 
         <div className="mt-6 flex flex-wrap justify-center lg:justify-start gap-4">
-          <button className="px-6 py-2 border-2 border-blue-700 text-blue-700 rounded-full font-medium hover:bg-blue-700 hover:text-white transition">
-            Contact Us
-          </button>
-          <button className="px-6 py-2 bg-blue-700 text-white rounded-full font-medium hover:bg-blue-800 transition">
-            Our School
-          </button>
+            <a 
+              href="https://api.whatsapp.com/send/?phone=6282130354353&text&type=phone_number&app_absent=0" 
+              target='_blank'
+              className="px-6 py-2 border-2 border-blue-700 text-blue-700 rounded-full font-medium hover:bg-blue-700 hover:text-white transition"
+            >
+              Contact Us
+            </a>
+
+            <a 
+              href="https://www.youtube.com/watch?v=ubTDTZYQq6I" 
+              className="px-6 py-2 bg-blue-700 text-white rounded-full font-medium hover:bg-blue-800 transition"
+            >
+              Our School
+            </a>
         </div>
       </div>
 
