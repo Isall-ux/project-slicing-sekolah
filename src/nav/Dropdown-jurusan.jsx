@@ -2,10 +2,19 @@
 
 const Dropdown = () => {
   const options = [
-    { value: 'EKSTRAKURIKULER', label: 'EKSTRAKURIKULER', link: 'https://smkyadikasoreang.sch.id/Pojoksiswa/Ekstrakurikuler' },
-    { value: 'PENGHARGAAN', label: 'PENGHARGAAN', link: 'https://smkyadikasoreang.sch.id/Pojoksiswa/Penghargaan' },
+    { 
+      value: 'EKSTRAKURIKULER', 
+      label: 'EKSTRAKURIKULER', 
+      link: 'https://smkyadikasoreang.sch.id/Pojoksiswa/Ekstrakurikuler' 
+    },
+    { 
+      value: 'PENGHARGAAN', 
+      label: 'PENGHARGAAN', 
+      link: 'https://smkyadikasoreang.sch.id/Pojoksiswa/Penghargaan' 
+    },
   ];
   const [isOpen, setIsOpen] = useState(false);
+  const [selected, setSelected] = useState(null);
 
   return (
     <div>
